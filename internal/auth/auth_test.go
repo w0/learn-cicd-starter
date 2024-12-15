@@ -9,7 +9,7 @@ import (
 func TestGetAPIKey(t *testing.T) {
 	secret := "MyCoolPassword"
 	headers := http.Header{}
-	headers.Add("Authorization", "ApiKey "+secret)
+	headers.Add("Authorization", secret)
 
 	key, err := GetAPIKey(headers)
 
