@@ -20,7 +20,7 @@ jobs:
 
       - name: Run Tests
         run: go test -cover ./...
-  style:
+  Style:
     name: Check code formatting
     runs-on: ubuntu-latest
 
